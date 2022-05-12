@@ -21,6 +21,9 @@ public class BouncingBall implements Runnable {
     private double speedX;
     private double speedY;
 
+    private double redColor;
+    private double blueColor;
+    private double greenColor;
     // Конструктор класса BouncingBall
     public BouncingBall(Field field) {
 // Необходимо иметь ссылку на поле, по которому прыгает мяч,
@@ -109,6 +112,15 @@ public class BouncingBall implements Runnable {
         canvas.fill(ball);
     }
 
+    public double getRed(){
+        return redColor;
+    }
+    public double getBlue(){
+        return blueColor;
+    }
+    public double getGreen(){
+        return greenColor;
+    }
     // Методы для трехцветного спектра
 
 }
