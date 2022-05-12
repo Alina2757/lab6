@@ -42,6 +42,12 @@ public class BouncingBall implements Runnable {
 // Начальное направление скорости тоже случайно,
 // угол в пределах от 0 до 2PI
         double angle = Math.random()*2*Math.PI;
+        redColor =  Math.random();
+        greenColor =  Math.random();
+        blueColor =  Math.random();
+// Цвет мяча выбирается случайно
+        color = new Color((float) redColor, (float) greenColor, (float) blueColor);
+
 // Вычисляются горизонтальная и вертикальная компоненты скорости
         speedX = 3*Math.cos(angle);
         speedY = 3*Math.sin(angle);

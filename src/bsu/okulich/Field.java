@@ -80,7 +80,9 @@ public class Field extends JPanel {
             wait();
         }
         // добавляем условие для зеленого спектра
-
+        if (pausedGreen && (2*(ball.getRed()+ball.getBlue())) < ball.getGreen()){
+            wait();
+        }
     }
 }
 
